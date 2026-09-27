@@ -129,3 +129,6 @@ def test_invalid_model_citations_are_dropped_and_recorded():
     cleaned = g._clean_citations(["returns", "community", "made_up"])
     assert cleaned == ["returns"]
     assert g._dropped_citations == ["community", "made_up"]
+
+
+
